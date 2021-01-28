@@ -24,8 +24,9 @@
 * THEN the saved events persist
 
 ## Screenshots
-![Perfect Day Planner demo](./Assets/Perfect-Day-Planner.gif)
-![Screenshot](./Assets/Planner screenshot.png)
+
+<img width="1152" alt="Planner screenshot" src="https://user-images.githubusercontent.com/74333123/106089485-a5328800-60ed-11eb-9211-5ee5457836eb.png">
+
 
 ## Tools
 * CSS 
