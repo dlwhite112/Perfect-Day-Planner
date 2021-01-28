@@ -1,35 +1,38 @@
-# Project Name
-> Project Blurb
+# Perfect Day Planner
+> A simple calendar application that allows a user to save events for each hour of the day by modifying starter code. This app will run in the browser and feature dynamically updated HTML and CSS powered by jQuery.
+
 
 ## Table of contents
 * [General info](#general-info)
 * [Screenshots](#screenshots)
 * [Tools](#technologies)
-* [Setup](#setup)
-* [Features](#features)
 
 
 ## General info
-
+* GIVEN I am using a daily planner to create a schedule
+* WHEN I open the planner
+* THEN the current day is displayed at the top of the calendar
+* WHEN I scroll down
+* THEN I am presented with time blocks for standard business hours
+* WHEN I view the time blocks for that day
+* THEN each time block is color-coded to indicate whether it is in the past, present, or future
+* WHEN I click into a time block
+* THEN I can enter an event
+* WHEN I click the save button for that time block
+* THEN the text for that event is saved in local storage
+* WHEN I refresh the page
+* THEN the saved events persist
 
 ## Screenshots
-
+![Perfect Day Planner demo](./Assets/Perfect-Day-Planner.gif)
+![Screenshot](./Assets/Planner screenshot.png)
 
 ## Tools
-* Tech 1 - version 1.0
-* Tech 2 - version 2.0
-* Tech 3 - version 3.0
+* CSS 
+* HTML
+* JS
 
 ## Link
+https://dlwhite112.github.io/Perfect-Day-Planner/
 
-
-## Code Examples
-Show examples of usage:
-`put-your-code-here`
-
-## Features
-List of features ready and TODOs for future development
-* Awesome feature 1
-* Awesome feature 2
-* Awesome feature 3
 

@@ -1,22 +1,31 @@
 // variables
-var timeNow  = moment().format('MMM Do YYYY h:mm a');
-var present = 1
-var past = 2
-var future = 3
+var timeDisplay = moment().format("MMM Do YYYY h:mm a");
+var timeNow = moment().hour();
+var present
+var past 
+var future
 
-// time now display at the top of the Calendar 
-console.log(timeNow)
-console.log($("#currentDay").text(`${timeNow}`)) ;
+// time now display at the top of the Calendar
+console.log(timeNow);
+console.log($("#currentDay").text(`${timeDisplay}`));
 
 //each time block is color-coded to indicate whether it is in the past, present, or future WHEN I click into a time block
-if (timeNow > past){
+function timeBlockUpdate() {
+  if (timeNow > past) {
     // make the color grey
-}
-if (timeNow == present){
-// make the color red
-}
-if (timeNow < future){
-// make the color green
+    $(this).addClass('past');
+    return
+  }
+  if (timeNow == present) {
+    // make the color red
+    $(this).addClass('present');
+    return
+  }
+  if (timeNow < future) {
+    // make the color green
+    $(this).addClass('future');
+    return
+  }
 }
 
 // WHEN I click into a time block, THEN I can enter an event
@@ -25,3 +34,5 @@ if (timeNow < future){
 
 // WHEN I refresh the page, THEN the saved events persist (local storage??)
 
+// call functions
+timeBlockUpdate();
